@@ -1,12 +1,369 @@
 @font-face {
-    font-family: 'ralewaythin';
-    src: url('fonts/raleway-variablefont_wght-webfont.eot');
-    src: url('fonts/raleway-variablefont_wght-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/raleway-variablefont_wght-webfont.woff2') format('woff2'),
-         url('fonts/raleway-variablefont_wght-webfont.woff') format('woff'),
-         url('fonts/raleway-variablefont_wght-webfont.ttf') format('truetype'),
-         url('fonts/raleway-variablefont_wght-webfont.svg#ralewaythin') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: "ralewaythin";
+  src: url("fonts/raleway-variablefont_wght-webfont.eot");
+  src: url("fonts/raleway-variablefont_wght-webfont.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/raleway-variablefont_wght-webfont.woff2") format("woff2"),
+    url("fonts/raleway-variablefont_wght-webfont.woff") format("woff"),
+    url("fonts/raleway-variablefont_wght-webfont.ttf") format("truetype"),
+    url("fonts/raleway-variablefont_wght-webfont.svg#ralewaythin") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+#bloc_page {
+  font-family: raleway, Arial, Helvetica, sans-serif;
+}
 
+#imglogo {
+  width: 100px;
+}
+.inscrire {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #0065fc;
+}
+#logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.lien1 {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid #f2f2f2;
+}
+.lien2 {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid #f2f2f2;
+}
+#liens {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  margin: 0px;
+}
+nav ul a {
+  list-style-type: none;
+  text-decoration: none;
+  color: black;
+}
+.lien1:hover,
+.lien2:hover {
+  border-bottom: 5px solid #0065fc;
+}
+li a:hover {
+  color: #0065fc;
+}
+header {
+  width: 100%;
+  margin-bottom: 25px;
+}
+h1 {
+  margin-left: 20px;
+  font-size: 1.5em;
+}
+h2 {
+  font-size: 1.4em;
+  margin-left: 10px;
+}
+.section1 p {
+  margin-left: 20px;
+  font-size: 0.9em;
+}
+#lieu {
+  width: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 30px 20px 30px 20px;
+}
+.map {
+  display: flex;
+  width: 60px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 20px 0px 0px 20px;
+  font-size: 1.5em;
+  border: none;
+}
+.marseille {
+  width: 220px;
+  height: 45px;
+  text-decoration: none;
+  border: none;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  padding-left: 10px;
+  font-size: 1.2em;
+}
+.loupe {
+  width: 50px;
+  height: 50px;
+  background-color: #0065fc;
+  color: white;
+  border-radius: 17px 17px 17px 17px;
+  border: none;
+  position: absolute;
+  left: 295px;
+}
+#filtre h2 {
+  font-size: 1.4em;
+  margin-left: 20px;
+}
+
+#filtre ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  width: 100%;
+  margin: 0px 10px 10px 10px;
+  padding: 10px;
+}
+#filtre li {
+  list-style-type: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  border: 3px solid #f2f2f2;
+  border-radius: 30px;
+  height: 50px;
+  padding-right: 10px;
+  margin: 0px 7px 7px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#filtre i {
+  color: #0065fc;
+  background-color: #deebff;
+  width: 53px;
+  height: 53px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+  margin-right: 5px;
+  position: relative;
+  left: -5px;
+}
+#i_info {
+  color: #0065fc;
+  min-width: 30px;
+  min-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 30px fixed;
+  border-radius: 20px;
+  border: 3px solid #f2f2f2;
+  margin-left: 20px;
+}
+.info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-bottom: 40px;
+}
+aside {
+  background-color: #f2f2f2;
+  padding: 0px;
+  margin: 0px;
+  width: 375px;
+  height: 610px;
+}
+.populaire {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 20px;
+}
+.populaire h2,
+i {
+  font-size: 1.4em;
+}
+.hotel h3,
+.hotel p {
+  font-size: 1em;
+  margin: 3px;
+}
+.hotel i {
+  font-size: 0.8em;
+  margin-top: 25px;
+  color: #0065fc;
+}
+.hotel {
+  width: 160px;
+  height: 140px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: center;
+  margin: 0px;
+  padding: 0px;
+}
+.conteneur {
+  /*les plus populaires*/
+  width: 320px;
+  height: 140px;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  border-radius: 20px;
+  border: 7px solid white;
+  box-shadow: 2px 2px 5px #f2f2f2;
+  margin: 0px 20px 20px 20px;
+  background-color: white;
+}
+.img7 {
+  width: 120px;
+  height: 100%;
+  background-image: url(../images/img_007s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 20px;
+}
+.img8 {
+  width: 120px;
+  height: 100%;
+  background-image: url(../images/img_008s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 20px;
+}
+.img9 {
+  width: 120px;
+  height: 100%;
+  background-image: url(../images/img_009s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  margin-right: 20px;
+}
+#i_silver {
+  color: #f2f2f2;
+}
+
+.conteneur2 {
+  /*hebergement a marseille*/
+  width: 320px;
+  height: 190px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-content: center;
+  border-radius: 20px;
+  border: 7px solid white;
+  box-shadow: 3px 3px 5px #f2f2f2;
+  margin: 0px 20px 20px 20px;
+  background-color: white;
+}
+.hotel2 i {
+  font-size: 0.8em;
+  color: #0065fc;
+  padding: 0px;
+}
+.hotel2 h3,
+.hotel2 p {
+  font-size: 0.8em;
+  margin: 5px;
+}
+.hotel2 {
+  width: 320px;
+  height: 80px;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+.img1 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_001s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.img2 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_002s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.img3 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_003s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.img4 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_004s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.img5 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_005s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.img6 {
+  width: 100%;
+  height: 140px;
+  background-image: url(../images/img_006s.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin-right: 20px;
+}
+.conteneur:hover,
+.conteneur2:hover {
+  border: 5px solid #deebff;
 }

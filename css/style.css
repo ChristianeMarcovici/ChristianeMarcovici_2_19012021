@@ -12,10 +12,12 @@
 }
 body {
   font-family: raleway, Arial, Helvetica, sans-serif;
+  margin: 0;
 }
 h1 {
   font-size: 1.4em;
   margin-left: 20px;
+  margin-right: 20px;
 }
 h2 {
   font-size: 1.3em;
@@ -48,16 +50,16 @@ ul {
   color: #0065fc;
 }
 .etoile1 :nth-last-child(1){
-  color: silver;
+  color: #f2f2f2;
 }
 .etoile2 :nth-last-child(-n+2) {
-  color: silver;
+  color: #f2f2f2;
 }
 header {
   position: relative;
   top: 0px;
   width: 100%;
-  height: 100px;
+  height: 150px;
   margin-bottom: 30px;
 }
 .imglogo {
@@ -69,7 +71,7 @@ header {
   background-size: cover;
   background-position: center;
   position: absolute;
-  top:10px;
+  top:30px;
   left:10px;
 }
 nav li {
@@ -81,7 +83,7 @@ nav li {
   border-bottom: 5px solid #f2f2f2;
   padding-bottom: 10px;
   position: relative;
-  top: 60px;
+  top: 90px;
 }
 nav ul {
   display: flex;
@@ -96,8 +98,8 @@ nav ul {
   text-decoration: none;
   list-style-type: none;
   position: absolute;
-  top: 10px;
-  right: 0px;
+  top: 30px;
+  right: 10px;
   margin: 0px;
   padding: 0px;
   border: none;
@@ -127,7 +129,7 @@ li a:hover {
 .map {
   display: flex;
   width: 60px;
-  height: 50px;
+  height: 49px;
   justify-content: center;
   align-items: center;
   background-color: #f2f2f2;
@@ -135,6 +137,7 @@ li a:hover {
   font-size: 1.5em;
   border: none;
   position: absolute;
+  top: -1px;
   left: 0px;
 }
 .marseille {
@@ -160,7 +163,9 @@ li a:hover {
 .desktop {
   display: none;
 }
-
+.filtre {
+  margin-left: 5px;
+}
 .filtre ul {
   width: 95%;
   display: flex;
@@ -195,7 +200,7 @@ li a:hover {
   left: -5px;
 }
 .filtre li:hover {
-  border: 1px solid #deebff;
+  border: 3px solid #deebff;
   background-color: #deebff;
 }
 .info p {
@@ -209,7 +214,7 @@ li a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: 30px fixed;
+  background-size: 30px;
   border-radius: 15px;
   border: 3px solid #f2f2f2;
   font-size: 0.6em;
@@ -573,17 +578,20 @@ footer li {
   }
   .imglogo {
     left:0px;
+    top: 20px;
   }
   nav li {
     width: 135px;
+    height: 60px;
     border-bottom: none;
     position: initial;
     padding-top: 10px;
+    border-top: 3px solid transparent;
   }
   nav ul {
     width: 40%;
     position: absolute;
-    top: -10px;
+    top: 0px;
     right: 20px; 
   }
   .inscrire {
@@ -591,10 +599,10 @@ footer li {
     font-size: 1em;
     position: initial;
     padding-top: 10px;
-    border: none;
+    border-top: 3px solid transparent;
   }
   nav li:hover, .inscrire:hover {
-    border-top: 5px solid #0065fc;
+    border-top: 3px solid #0065fc;
     border-bottom: none;
   }
   .section1 {
@@ -632,7 +640,7 @@ footer li {
     border: none;
     position: absolute;
     right: 0px;
-    top: 0px;
+    top: -1px;
   }
   .marseille {
     width: 190px;
@@ -700,9 +708,13 @@ footer li {
   flex-wrap: wrap;
   align-content: center;
 }
-.hotel p, .hotel h3 {
+.hotel h3 {
+  font-size: 0.9em;
+  margin-bottom: 0px;
+}
+.hotel p {
   font-size: 0.8em;
-  margin: 5px 0px 10px 0px;
+  margin: 5px 0px 25px 0px;
 }
 .cont_heb h2 {
   font-size: 1.3em;
@@ -876,12 +888,7 @@ footer li {
   }
 }
 @media (min-width:1440px) {
-  body {
-    width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0 ;
-  } 
+ 
   #bloc_page {
     width: 1340px;
     margin: 0 auto;
@@ -896,6 +903,16 @@ footer li {
     margin: 10px 20px 20px 20px;
     width: 320px;
     height: 140px;
+  }
+  .hotel h3, .hotel2 h3, .loisirs {
+    font-size: 1em;
+  }
+  .hotel h3 {
+    margin-top: 20px;
+  }
+  .hotel p {
+    font-size: 0.9em;
+    margin: 5px 0px 30px 0px;
   }
   .section3 {   /*hebergement inclant tablette, fond et h2*/
     width: 880px;
